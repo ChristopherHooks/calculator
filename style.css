@@ -5,6 +5,8 @@ body {
     padding: 0;
     margin: auto 0 auto 0;
     box-sizing: border-box;
+    font-family: "Courier New";
+    
 }
 
 #calculator{
@@ -17,6 +19,8 @@ body {
     height:400px;
     background-color:lightgray;
     border: 4px solid;
+    margin-top: 20vh;
+    font-size: 24px;
     
 }
 
@@ -27,8 +31,10 @@ body {
     width: 260px;
     height: 50px;
     padding: 10px;
-    border: 1px solid black;
-    background: greenyellow
+    border: 1px solid green;
+    background: greenyellow;
+    font-size: 32px;
+    
 }
 
 #button-container{
