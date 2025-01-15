@@ -122,3 +122,36 @@ clear.addEventListener('click', () => {
 undo.addEventListener('click', () => {
     display.value = '';
 });
+
+document.addEventListener('keydown', (event) => {
+    const key = event.key;
+
+    // Numbers and decimal point
+    if (!isNaN(key) || key === '.') {
+        const button = Array.from(numbers).find(btn => btn.textContent === key);
+        if (button) button.click();
+    }
+
+    // Operators
+    if (['+', '-', '*', '/'].includes(key)) {
+        let operatorKey = key === '*' ? 'x' : key === '/' ? '%' : key;
+        const button = Array.from(operators).find(btn => btn.textContent === operatorKey);
+        if (button) button.click();
+    }
+
+    // Enter key for "="
+    if (key === 'Enter') {
+        equal.click();
+    }
+
+    // Backspace for "undo"
+    if (key === 'Backspace') {
+        undo.click();
+    }
+
+    // Escape key for "clear"
+    if (key === 'Escape') {
+        clear.click();
+    }
+});
+
