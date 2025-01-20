@@ -1,4 +1,3 @@
-# calculator
 # JavaScript Calculator
 
 This project implements a simple calculator using JavaScript, HTML, and CSS. The calculator performs basic arithmetic operations such as addition, subtraction, multiplication, and division, while handling user interactions via a dynamic display and event listeners.
